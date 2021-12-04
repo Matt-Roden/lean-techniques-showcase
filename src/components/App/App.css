@@ -1,6 +1,7 @@
 .App {
   border: solid blue 2px;
   min-height: 100vh;
+  display: block;
   background: #FFFFFF;
   background: -webkit-linear-gradient(to right, #ffffff, #eef2f3);
   background: linear-gradient(to right, #ffffff, #eef2f3); 
