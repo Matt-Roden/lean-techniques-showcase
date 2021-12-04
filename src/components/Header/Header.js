@@ -11,7 +11,7 @@ const Header = () => {
           src={photoLogo}
           alt='app logo, polaroids'
         />
-        <h2>My Photo Albums</h2>
+        <h2 className='header-text'>{`My Photo Albums`}</h2>
       </div>
     </header>
   )

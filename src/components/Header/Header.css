@@ -3,4 +3,25 @@
   height: 75px;
   background-color: #08516B ;
   color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logo-and-text-container {
+  /* border: solid white 2px; */
+  height: 50px;
+  width: 250px;
+  margin: 0px 0px 5px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.header-text {
+  color: white;
 }
