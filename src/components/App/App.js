@@ -31,7 +31,7 @@ const App = () => {
   }, [currentAlbumNumber])
 
   return (
-    <div>
+    <div className='App'>
       <Header />
       <AlbumSearchForm changeCurrentAlbumNumber={changeCurrentAlbumNumber}/>
       {isError ? <Error /> : <></> }
