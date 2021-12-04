@@ -16,7 +16,7 @@ const App = () => {
   const changeCurrentAlbumNumber = (id) => {
     if (id === currentAlbumNumber) {
       return
-    } else if (id < 0 || id > 100) {
+    } else if (id <= 0 || id > 100) {
       setIsError(true)
     } else {
       setIsError(false)
