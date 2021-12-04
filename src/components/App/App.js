@@ -13,14 +13,18 @@ const App = () => {
   const [currentAlbumNumber, setCurrentAlbumNumber] = useState(null);
   const [photos, setPhotos] = useState([]);
 
+  const changeCurrentAlbumNumber = (id) => {
+    setCurrentAlbumNumber(id)
+  }
+
   useEffect(() => {
-    getPhotosByAlbum(1).then(data => console.log(data))
-  }, [])
+    getPhotosByAlbum(currentAlbumNumber).then(data => setPhotos(data))
+  }, [currentAlbumNumber])
 
   return (
     <div>
       <Header />
-      <AlbumSearchForm />
+      <AlbumSearchForm changeCurrentAlbumNumber={changeCurrentAlbumNumber}/>
       <PhotosContainer />
     </div>
   );
