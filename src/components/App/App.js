@@ -10,12 +10,16 @@ import { getPhotosByAlbum } from '../../utils';
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [currentAlbumNumber, setCurrentAlbumNumber] = useState(null);
+  const [currentAlbumNumber, setCurrentAlbumNumber] = useState('');
   const [photos, setPhotos] = useState([]);
 
   const changeCurrentAlbumNumber = (id) => {
-    setIsLoading(true)
-    setCurrentAlbumNumber(id)
+    if(id === currentAlbumNumber) {
+      return
+    } else {
+      setIsLoading(true)
+      setCurrentAlbumNumber(id)
+    } 
   }
 
   useEffect(() => {
@@ -28,7 +32,6 @@ const App = () => {
       <Header />
       <AlbumSearchForm changeCurrentAlbumNumber={changeCurrentAlbumNumber}/>
       {!isLoading ? <PhotosContainer photos={photos} currentAlbumNumber={currentAlbumNumber}/> : <Loader />}
-      
     </div>
   );
 }
