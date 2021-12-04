@@ -7,6 +7,11 @@ import Error from '../Error/Error';
 import React, { useState, useEffect } from 'react'
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [currentAlbumNumber, setCurrentAlbumNumber] = useState(null);
+  const [photos, setPhotos] = useState([]);
+
   return (
     <div>
       <Header />
