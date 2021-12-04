@@ -1,8 +1,15 @@
 import './App.css';
+import Header from '../Header/Header';
+import AlbumSearchForm from '../AlbumSearchForm/AlbumSearchForm';
+import PhotosContainer from '../PhotosContainer/PhotosContainer';
 
 const App = () => {
   return (
-    <h1>MyPhotoAlbum</h1>
+    <div>
+      <Header />
+      <AlbumSearchForm />
+      <PhotosContainer />
+    </div>
   );
 }
 
