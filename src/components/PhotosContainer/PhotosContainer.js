@@ -2,11 +2,16 @@ import React from 'react'
 import PhotoCard from '../PhotoCard/PhotoCard'
 import './PhotosContainer.css'
 
-const PhotosContainer = () => {
+const PhotosContainer = ({ photos }) => {
+  const photoCards = photos.map(photo => {
+    return (
+      <PhotoCard photoInfo={photo}/>
+    )
+  })
+
   return (
     <div>
-      PhotosContainer Here!
-      <PhotoCard />
+      {photoCards}
     </div>
   )
 }
