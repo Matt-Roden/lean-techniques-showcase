@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Header />
       <AlbumSearchForm changeCurrentAlbumNumber={changeCurrentAlbumNumber}/>
-      <PhotosContainer photos={photos}/>
+      <PhotosContainer photos={photos} currentAlbumNumber={currentAlbumNumber}/>
     </div>
   );
 }
