@@ -5,7 +5,7 @@ import './PhotosContainer.css'
 const PhotosContainer = ({ photos }) => {
   const photoCards = photos.map(photo => {
     return (
-      <PhotoCard photoInfo={photo}/>
+      <PhotoCard photoInfo={photo} key={photo.id}/>
     )
   })
 
