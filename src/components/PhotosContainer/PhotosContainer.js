@@ -11,10 +11,13 @@ const PhotosContainer = ({ photos, currentAlbumNumber }) => {
 
   return (
     <div>
-      <h3>{`Photos From Album Number: ${currentAlbumNumber}`}</h3>
+      <h3>{`Photos From Album Number ${currentAlbumNumber}`}</h3>
       {photoCards}
     </div>
   )
 }
 
 export default PhotosContainer
+
+// only show current album number when there is a a value for a current album number
+// show separate message otherwise?
