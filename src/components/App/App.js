@@ -14,9 +14,12 @@ const App = () => {
   const [photos, setPhotos] = useState([]);
 
   const changeCurrentAlbumNumber = (id) => {
-    if(id === currentAlbumNumber) {
+    if (id === currentAlbumNumber) {
       return
+    } else if (id < 0 || id > 100) {
+      setIsError(true)
     } else {
+      setIsError(false)
       setIsLoading(true)
       setCurrentAlbumNumber(id)
     } 
@@ -31,7 +34,8 @@ const App = () => {
     <div>
       <Header />
       <AlbumSearchForm changeCurrentAlbumNumber={changeCurrentAlbumNumber}/>
-      {!isLoading ? <PhotosContainer photos={photos} currentAlbumNumber={currentAlbumNumber}/> : <Loader />}
+      {isError ? <Error /> : <></> }
+      {isLoading ? <Loader /> : <PhotosContainer photos={photos} currentAlbumNumber={currentAlbumNumber}/>}
     </div>
   );
 }
