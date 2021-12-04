@@ -6,12 +6,12 @@ const AlbumSearchForm = ({ changeCurrentAlbumNumber }) => {
 
   const handleClick = (event) => {
     event.preventDefault()
-    console.log('VALUE: ', value)
     changeCurrentAlbumNumber(value)
+    resetForm()
   }
 
   const resetForm = () => {
-    
+    setValue('')
   }
 
   return (
