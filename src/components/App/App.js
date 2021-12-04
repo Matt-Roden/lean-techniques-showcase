@@ -5,12 +5,17 @@ import PhotosContainer from '../PhotosContainer/PhotosContainer';
 import Loader from '../Loader/Loader';
 import Error from '../Error/Error';
 import React, { useState, useEffect } from 'react'
+import { getPhotosByAlbum } from '../../utils';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [currentAlbumNumber, setCurrentAlbumNumber] = useState(null);
   const [photos, setPhotos] = useState([]);
+
+  useEffect(() => {
+    getPhotosByAlbum(1).then(data => console.log(data))
+  }, [])
 
   return (
     <div>
