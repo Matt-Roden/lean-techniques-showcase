@@ -1,0 +1,10 @@
+.error-container {
+  width: 100%;
+  background-color: transparent;
+  color: #743837;
+  font-weight: 900;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
