@@ -1,4 +1,3 @@
-import React from 'react'
 import PhotoCard from '../PhotoCard/PhotoCard'
 import './PhotosContainer.css'
 
@@ -10,14 +9,13 @@ const PhotosContainer = ({ photos, currentAlbumNumber }) => {
   })
 
   return (
-    <div>
-      <h3>{`Photos From Album Number ${currentAlbumNumber}`}</h3>
-      {photoCards}
+    <div className='album-display-container'>
+      {!currentAlbumNumber ? <></> : <h3 className='album-number-message'>{`Photos From Album Number: ${currentAlbumNumber}`}</h3>}
+      <div className='photos-container'>
+        {photoCards}
+      </div>
     </div>
   )
 }
 
 export default PhotosContainer
-
-// only show current album number when there is a a value for a current album number
-// show separate message otherwise?
