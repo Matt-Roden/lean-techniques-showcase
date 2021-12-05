@@ -30,8 +30,9 @@
   border: solid #BACD4F 3px;
   color: #BACD4F;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
   font-size: large;
-  font-weight: 700;
+  font-weight: bolder;
   transition: all 0.35s ease-in-out;
 }
 

@@ -24,6 +24,11 @@
   align-items: flex-start;
 }
 
+::-webkit-scrollbar {
+  width: 0;  
+  background: transparent;
+}
+
 .card-text {
   margin: 0;
 }
