@@ -14,7 +14,9 @@ describe ('User flows - filtering by album', () => {
   });
 
   it('should render a form with the correct elements', () => {
-
+    cy.get('div.form-container').find('h3.form-message').contains('Select a Photo Album by Number (1-100)')
+    cy.get('form.form').find('input[type="number"]')
+    cy.get('form.form').find('button.choose-button').contains('Choose Album')
   });
 
   it('should allow the user to select and album number and see the corresponding photos from that album', () => {
