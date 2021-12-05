@@ -1,7 +1,7 @@
 import { cyan } from "@mui/material/colors"
 
 Cypress.Commands.add('fetchAlbumThree', () => {
-  cyan.intercept('GET', 'https://jsonplaceholder.typicode.com/photos?albumId=3', {
+  cy.intercept('GET', 'https://jsonplaceholder.typicode.com/photos?albumId=3', {
     statusCode: 200,
     body: [
       {

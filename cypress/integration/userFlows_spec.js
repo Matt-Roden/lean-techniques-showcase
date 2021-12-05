@@ -19,8 +19,13 @@ describe ('User flows - filtering by album', () => {
     cy.get('form.form').find('button.choose-button').contains('Choose Album')
   });
 
-  it('should allow the user to select and album number and see the corresponding photos from that album', () => {
-
+  it.only('should allow the user to select and album number and see the corresponding photos from that album', () => {
+    cy.fetchAlbumThree()
+    cy.get('div.full-card-container').should('have.length', 2)
+    cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 101')
+    cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 102')
+    cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: incidunt alias vel enim')
+    cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: eaque iste corporis tempora vero distinctio consequuntur nisi nesciunt')
   });
 
   it('should display an error message when the user inputs an invalid number into the form', () => {
