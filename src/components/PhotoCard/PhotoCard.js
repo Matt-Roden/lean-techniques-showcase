@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './PhotoCard.css'
+import { gsap } from 'gsap'
 
 const PhotoCard = ({ photoInfo }) => {
+  let card = useRef(null);
+
+  useEffect(() => {
+    gsap.from([card], {
+      opacity: 0, 
+      // y: 100, 
+      duration: 1.1
+    });
+  }, [])
+
   return (
-    <div className='full-card-container'>
+    <div className='full-card-container' ref={el => card = el }>
       <div className='photo-container'>
         <img className='card-photo' src={photoInfo.url} alt='colorful placeholder'/>
       </div>
