@@ -1,25 +1,25 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import { cyan } from "@mui/material/colors"
+
+Cypress.Commands.add('fetchAlbumThree', () => {
+  cyan.intercept('GET', 'https://jsonplaceholder.typicode.com/photos?albumId=3', {
+    statusCode: 200,
+    body: [
+      {
+        "albumId": 3,
+        "id": 101,
+        "title": "incidunt alias vel enim",
+        "url": "https://via.placeholder.com/600/e743b",
+        "thumbnailUrl": "https://via.placeholder.com/150/e743b"
+      },
+      {
+        "albumId": 3,
+        "id": 102,
+        "title": "eaque iste corporis tempora vero distinctio consequuntur nisi nesciunt",
+        "url": "https://via.placeholder.com/600/a393af",
+        "thumbnailUrl": "https://via.placeholder.com/150/a393af"
+      }
+    ]
+  })
+  cy.get('form.form').find('input.form-input').type('3')
+  cy.get('form.form').find('button.choose-button').click()
+}); // end command
