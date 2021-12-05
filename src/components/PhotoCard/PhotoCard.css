@@ -1,5 +1,4 @@
 .full-card-container {
-  border: solid blue 2px;
   height: 300px;
   width: 250px;
   margin: 10px;
@@ -7,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   padding: 5px;
+  background: white;
+  box-shadow:  6px 6px 12px #cecece,
+             -6px -6px 12px #f2f2f2;
 }
 
 .card-photo {
