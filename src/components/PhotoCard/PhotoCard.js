@@ -8,8 +8,8 @@ const PhotoCard = ({ photoInfo }) => {
         <img className='card-photo' src={photoInfo.url} alt='colorful placeholder'/>
       </div>
       <div className='photo-info-container'>
-        <h5 className='photo-id-text'>{`Photo ID: ${photoInfo.id}`}</h5>
-        <p className='photo-title-text'>{`Title: ${photoInfo.title}`}</p>
+        <h5 className='photo-id-text card-text'>{`Photo ID: ${photoInfo.id}`}</h5>
+        <p className='photo-title-text card-text'>{`Title: ${photoInfo.title}`}</p>
       </div>
     </div>
   )

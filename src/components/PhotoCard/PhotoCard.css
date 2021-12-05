@@ -3,9 +3,32 @@
   height: 300px;
   width: 250px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
 }
 
 .card-photo {
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 250px;
+}
+
+.photo-info-container {
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.photo-title-text {
+  background-color: rgb(228, 225, 225);
+  padding: 3px;
+  border-radius: 3px;
+  margin-top: 3px;
 }
