@@ -1,0 +1,11 @@
+.full-card-container {
+  border: solid blue 2px;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+}
+
+.card-photo {
+  height: 200px;
+  width: 200px;
+}

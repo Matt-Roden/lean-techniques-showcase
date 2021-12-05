@@ -10,9 +10,11 @@ const PhotosContainer = ({ photos, currentAlbumNumber }) => {
   })
 
   return (
-    <div>
-      <h3>{`Photos From Album Number ${currentAlbumNumber}`}</h3>
-      {photoCards}
+    <div className='album-display-container'>
+      <h3 className='album-number-message'>{`Photos From Album Number ${currentAlbumNumber}`}</h3>
+      <div className='photos-container'>
+        {photoCards}
+      </div>
     </div>
   )
 }

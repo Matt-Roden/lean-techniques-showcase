@@ -1,5 +1,4 @@
 .form-container {
-  /* border: solid black 2px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +6,6 @@
 }
 
 .form {
-  /* border: solid green 1px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
