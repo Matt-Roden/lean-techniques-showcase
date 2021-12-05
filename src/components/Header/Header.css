@@ -6,12 +6,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  box-shadow: 0 3px 2px -2px rgb(68, 68, 68)
 }
 
 .logo-and-text-container {
   /* border: solid white 2px; */
   height: 50px;
-  width: 250px;
+  width: 260px;
   margin: 0px 0px 5px 25px;
   display: flex;
   justify-content: space-between;
