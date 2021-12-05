@@ -8,7 +8,6 @@ const PhotoCard = ({ photoInfo }) => {
   useEffect(() => {
     gsap.from([card], {
       opacity: 0, 
-      // y: 100, 
       duration: 1.1
     });
   }, [])
