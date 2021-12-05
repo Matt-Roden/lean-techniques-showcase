@@ -11,7 +11,7 @@ const PhotosContainer = ({ photos, currentAlbumNumber }) => {
 
   return (
     <div className='album-display-container'>
-      <h3 className='album-number-message'>{`Photos From Album Number ${currentAlbumNumber}`}</h3>
+      {!currentAlbumNumber ? <></> : <h3 className='album-number-message'>{`Photos From Album Number: ${currentAlbumNumber}`}</h3>}
       <div className='photos-container'>
         {photoCards}
       </div>
@@ -23,3 +23,5 @@ export default PhotosContainer
 
 // only show current album number when there is a a value for a current album number
 // show separate message otherwise?
+
+//<h3 className='album-number-message'>{`Photos From Album Number: ${currentAlbumNumber}`}</h3>
