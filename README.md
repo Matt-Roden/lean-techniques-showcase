@@ -29,7 +29,7 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 
 - End to End testing was done using the Cypress testing library.
 
-<img src='src/images/tests.gif' height='400px' width='650px'/>
+<img src='src/images/tests.gif' height='400px' width='750px'/>
 
 ### Responsiveness & Accessibility:
 
