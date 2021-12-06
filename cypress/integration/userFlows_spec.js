@@ -75,7 +75,7 @@ describe ('User flows - filtering by album', () => {
     cy.get('div.loader-container').should('not.exist')
   });
 
-  it.only('should properly validate user inputs', () => {
+  it('should properly validate user inputs', () => {
     cy.enterTripleDigitsStartingWithTwoZeros()
     cy.get('div.full-card-container').should('have.length', 2)
     cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 401')
