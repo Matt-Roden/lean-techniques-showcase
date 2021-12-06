@@ -45,9 +45,10 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 ### Process:
 
 - The app architecture and design was first sketched by hand and then transferred into wireframes on a Miro board
-- GitHub Projects were used to plan out development steps and Issues were assigned to each step along the way in order to stay agile in the development process
+- GitHub Projects was used to plan out development steps 
+- Issues were assigned to each step along the way in order to stay agile in the development process
 
 <img src='src/images/notes.jpg' height='400px' />
 <img src='src/images/wireframes2.png.png' height='400px' />
 
-<p align='center'>This project was built as an interview challenge for Lean TECHniques</p>
+<p align='center'>This project was built as an interview challenge for </p><a href='https://leantechniques.com/'>Lean TECHniques</a>
