@@ -60,7 +60,7 @@ describe ('User flows - filtering by album', () => {
     cy.get('div.error-container').should('not.exist')
   });
 
-  it.only('should show a circular loader after choosing an album, before rendering the photo cards', () => {
+  it('should show a circular loader after choosing an album, before rendering the photo cards', () => {
     cy.fetchAlbumThree()
     cy.get('form.form').find('input.form-input').type('3')
     cy.get('form.form').find('button.choose-button').click()
