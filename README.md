@@ -49,7 +49,7 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 
 <div display='flex'>
   <img src='src/images/notes.jpg' height='400px' />
-  <img src='src/images/wireframes2.png.png' height='400px' />
+  <img src='src/images/wireframes2.png.png' height='400px' width='600px' />
 </div>
 
 <p align='center'>This project was built as an interview challenge for Lean TECHniques</p>
