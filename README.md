@@ -12,7 +12,7 @@ The application consumes data from [this RESTful API endpoint](https://jsonplace
 
 React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Library, Git, GitHub, NPM
 
-### Setup Instructions:
+### Local Setup Instructions:
 
   + Fork this repo by clicking the ```Fork``` button in the upper right of this page
   + Clone your new repo down to your local machine in your chosen directory by running ```git clone <remote repo url>``` and then ```cd``` into project directory
