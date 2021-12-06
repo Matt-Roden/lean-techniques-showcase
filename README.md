@@ -6,6 +6,8 @@
 
 My Photo Album is a web application that allows a user to view a collection of photos and filter specifically what album they would like to view. 
 
+The application consumes data from [this RESTful API endpoint](https://jsonplaceholder.typicode.com/photos).
+
 ### Tech Stack:
 
 React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Library, Git, GitHub, NPM
