@@ -44,7 +44,7 @@ describe ('User flows - filtering by album', () => {
     cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 102')
     cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: incidunt alias vel enim')
     cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: eaque iste corporis tempora vero distinctio consequuntur nisi nesciunt')
-  })
+  });
 
   it('should not display the error message after making a valid search query', () => {
     cy.fetchAlbumThree()
@@ -58,5 +58,20 @@ describe ('User flows - filtering by album', () => {
     cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: eaque iste corporis tempora vero distinctio consequuntur nisi nesciunt')
     cy.fetchAlbumFour()
     cy.get('div.error-container').should('not.exist')
-  })
+  });
+
+  it.only('should show a circular loader after choosing an album, before rendering the photo cards', () => {
+    cy.fetchAlbumThree()
+    cy.get('form.form').find('input.form-input').type('3')
+    cy.get('form.form').find('button.choose-button').click()
+    cy.get('div.loader-container')
+    cy.wait(1000)
+    cy.get('div.loader-container').should('not.exist')
+    cy.fetchAlbumFour()
+    cy.get('form.form').find('input.form-input').type('4')
+    cy.get('form.form').find('button.choose-button').click()
+    cy.get('div.loader-container')
+    cy.wait(1000)
+    cy.get('div.loader-container').should('not.exist')
+  });
 }); // end describe block
