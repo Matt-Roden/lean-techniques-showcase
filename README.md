@@ -35,7 +35,7 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 
 - This application was designed and built with responsivesness and accessibility in mind. It achieved a 100% Lighthouse Accessibility score and is responsive acrosse desktop, tablet and mobile devices.
 
-<div display='flex' justify-content='space-around' >
+<div width='100%' display='flex' justify-content='space-around' >
   <img src='src/images/lighthouseScore-ii.png' height='400px'/>
   <img src='src/images/mobile.png' height='400px' />
   <img src='src/images/tablet.png' height='400px' />
