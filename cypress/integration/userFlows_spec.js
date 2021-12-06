@@ -87,7 +87,6 @@ describe ('User flows - filtering by album', () => {
     cy.get('h3.album-number-message').contains('Photos From Album Number: 40')
     cy.get('div.full-card-container').should('have.length', 2)
     cy.enterTripleDigitsStartingWithSingleZero()
-    cy.enterTripleDigitsStartingAndEndingWithZero()
     cy.get('h3.album-number-message').contains('Photos From Album Number: 44')
     cy.get('div.full-card-container').should('have.length', 2)
   });
