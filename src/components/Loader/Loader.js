@@ -4,7 +4,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 const Loader = () => {
   return (
-    <div>
+    <div className='loader-container'>
       <CircularProgress sx={{ color: '#743837' }}/>
     </div>
   )
