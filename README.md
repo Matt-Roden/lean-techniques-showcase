@@ -29,7 +29,7 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 
 - End to End testing was done using the Cypress testing library.
 
-<img src='src/images/tests.gif' height='400px' width='750px'/>
+<img src='src/images/tests.gif' height='400px' width='650px'/>
 
 ### Responsiveness & Accessibility:
 
@@ -49,7 +49,7 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 
 <div display='flex'>
   <img src='src/images/notes.jpg' height='400px' />
-  <img src='src/images/wireframes2.png.png' height='400px' width='600px' />
+  <img src='src/images/wireframes2.png.png' height='400px' width='700px' />
 </div>
 
 <p align='center'>This project was built as an interview challenge for Lean TECHniques</p>
