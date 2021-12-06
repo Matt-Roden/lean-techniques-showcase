@@ -13,15 +13,27 @@ const App = () => {
   const [currentAlbumNumber, setCurrentAlbumNumber] = useState('');
   const [photos, setPhotos] = useState([]);
 
+  const validateId = (id) => {
+    let splitId = id.split('')
+    if (splitId[0] === '0') {
+      splitId.shift()
+      let result = splitId.join()
+      return result
+    } else {
+      return id
+    }
+  }
+
   const changeCurrentAlbumNumber = (id) => {
-    if (id === currentAlbumNumber) {
+    let validID = validateId(id)
+    if (validID === currentAlbumNumber) {
       return
-    } else if (id <= 0 || id > 100) {
+    } else if (validID <= 0 || validID > 100) {
       setIsError(true)
     } else {
       setIsError(false)
       setIsLoading(true)
-      setCurrentAlbumNumber(id)
+      setCurrentAlbumNumber(validID)
     } 
   }
 
