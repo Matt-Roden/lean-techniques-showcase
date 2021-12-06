@@ -51,4 +51,4 @@ React, JavaScript, Cypress, GSAP Animation Library, Material UI Component Librar
 <img src='src/images/notes.jpg' height='400px' />
 <img src='src/images/wireframes2.png.png' height='400px' />
 
-<p align='center'>This project was built as an interview challenge for </p><a href='https://leantechniques.com/'>Lean TECHniques</a>
+This project was built as an interview challenge for [Lean TECHniques](https://leantechniques.com/)
