@@ -1,4 +1,4 @@
-<h1 align='center'>My Photo Album</h1>
+<h1 align='center'>Lean TECHniques Showcase: My Photo Album</h1>
 
 <a href='https://mroden-lt-showcase.surge.sh/'><h3 align='center'>Deployment Link</h3></a>
 
