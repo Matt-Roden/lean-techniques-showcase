@@ -74,4 +74,20 @@ describe ('User flows - filtering by album', () => {
     cy.wait(1000)
     cy.get('div.loader-container').should('not.exist')
   });
+
+  it('should properly validate user inputs', () => {
+    cy.enterTripleDigitsStartingWithTwoZeros()
+    cy.get('div.full-card-container').should('have.length', 2)
+    cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 401')
+    cy.get('div.full-card-container').find('h5.photo-id-text').contains('Photo ID: 402')
+    cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: I\'m from album 4')
+    cy.get('div.full-card-container').find('p.photo-title-text').contains('Title: Yeah, I\'m also from album 4')
+    cy.get('h3.album-number-message').contains('Photos From Album Number: 4')
+    cy.enterTripleDigitsStartingAndEndingWithZero()
+    cy.get('h3.album-number-message').contains('Photos From Album Number: 40')
+    cy.get('div.full-card-container').should('have.length', 2)
+    cy.enterTripleDigitsStartingWithSingleZero()
+    cy.get('h3.album-number-message').contains('Photos From Album Number: 44')
+    cy.get('div.full-card-container').should('have.length', 2)
+  });
 }); // end describe block
