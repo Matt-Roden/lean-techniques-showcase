@@ -1,8 +1,6 @@
 # My Photo Album
 
-### Deployment Link: 
-
-https://mroden-lt-showcase.surge.sh/
+### [Deployment Link](https://mroden-lt-showcase.surge.sh/)
 
 ### Abstract:
 
