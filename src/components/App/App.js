@@ -28,8 +28,6 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {getPhotosByAlbum(currentAlbumNumber).then(data => setPhotos(data))
       .then(setIsLoading(false))}, 850)
-    // getPhotosByAlbum(currentAlbumNumber).then(data => setPhotos(data))
-    // .then(setIsLoading(false))
   }, [currentAlbumNumber])
 
   return (
